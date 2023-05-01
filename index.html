@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="style.css">
+  <title>New button Animaiton</title>
+</head>
+<body>
+  <div class="container">
+    <div class="icon-box wifi"><i class="fa-solid fa-wifi"></i></div>
+    <div class="icon-box calc"><i class="fa-solid fa-calculator"></i></div>
+    <div class="icon-box bell"><i class="fa-solid fa-bell-slash"></i></div>
+    <div class="icon-box music"><i class="fa-solid fa-music"></i></div>
+    <div class="icon-box camera"><i class="fa-solid fa-camera"></i></div>
+    <div class="icon-box clndar"><i class="fa-solid fa-calendar-check"></i></div>
+    <div class="icon-box file"><i class="fa-solid fa-folder-open"></i></div>
+    <div class="icon-box phone"><i class="fa-solid fa-phone"></i></div>
+    <div class="main-box"><i class="fa-solid fa-gear"></i></div>
+    <div class="close-btn"><i class="fa-solid fa-circle-xmark"></i></div>
+  </div>
+  <a href="https://www.youtube.com/@codenath" target="_blank" class="yt">My Youtube Channel</a>
+</body>
+<script type="text/javascript">
+  let btn = document.querySelector(".main-box");
+  let closeBtn = document.querySelector(".close-btn");
+  let openBtn = document.querySelector(".fa-gear");
+  let icons = document.querySelectorAll(".icon-box");
+  let cont = document.querySelector(".container");
+  let wifi = document.querySelector(".wifi");
+  let calc = document.querySelector(".calc");
+  let bell = document.querySelector(".bell");
+  let music = document.querySelector(".music");
+  let camera = document.querySelector(".camera");
+  let clndar = document.querySelector(".clndar");
+  let file = document.querySelector(".file");
+  let phone = document.querySelector(".phone");
+
+  let sfx = new Audio("sfx.mp3");
+  let sfx1 = new Audio("sfx1.mp3");
+
+  closeBtn.style.display = "none";
+  
+
+    for(let i of icons){
+      btn.addEventListener("click", event =>{
+
+      closeBtn.style.display = "flex";
+      btn.style.display = "none";
+      i.style.position = "absolute";
+      wifi.style.top = "0%";
+      calc.style.bottom = "0%";
+      bell.style.left = "0%";
+      music.style.right = "0%";
+      camera.style.top = "10%";
+      camera.style.right = "10%";
+      clndar.style.top = "10%";
+      clndar.style.left = "10%";
+      file.style.bottom = "10%";
+      file.style.left = "10%";
+      phone.style.bottom = "10%";
+      phone.style.right = "10%";
+
+      sfx1.play();
+
+      })
+    }
+  closeBtn.addEventListener("click", event =>{
+    for(let i of icons){
+      i.style.position = "absolute";
+      wifi.style.top = "38%";
+      calc.style.bottom = "38%";
+      bell.style.left = "40%";
+      music.style.right = "40%";
+      camera.style.top = "40%";
+      camera.style.right = "40%";
+      clndar.style.top = "40%";
+      clndar.style.left = "40%";
+      file.style.bottom = "40%";
+      file.style.left = "40%";
+      phone.style.bottom = "40%";
+      phone.style.right = "40%";
+      btn.style.display = "flex";
+      closeBtn.style.display = "none";
+      sfx1.play();
+    }
+  })
+  
+</script>
+</html>

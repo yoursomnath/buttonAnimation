@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  -webkit-tap-highlight-color: transparent;
+  font-family: 'Roboto', sans-serif;
+}
+body{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  width: 100%;
+  height: 100vh;
+  background: rgb(20,192,255);
+  background: linear-gradient(90deg, rgba(20,192,255,1) 35%, rgba(29,173,252,1) 65%); 
+}
+.yt{
+  position: absolute;
+  bottom: 10%;
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 10px;
+  border: 1px solid white;
+  background: rgba(255, 255, 255, 0.3);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  color: white;
+}
+.container{
+  height: 220px;
+  width: 220px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 10%;
+  position: absolute;
+}
+.main-box{
+  position: absolute;
+  height: 80px;
+  width: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  font-size: 30px;
+  color: white;
+  background: linear-gradient(90deg, rgba(20,192,255,1) 35%, rgba(29,173,252,1) 65%); 
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+}
+.close-btn{
+  position: absolute;
+  height: 80px;
+  width: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  font-size: 30px;
+  color: white;
+  background: linear-gradient(90deg, rgba(20,192,255,1) 35%, rgba(29,173,252,1) 65%); 
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+}
+.main-box i{
+  transition: 0.5s all;
+}
+.main-box i:hover{
+  transform: rotate(360deg);
+}
+.icon-box{
+  height: 50px;
+  width: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  border-radius: 50%;
+  cursor: pointer;
+  background: rgba(255, 255, 255, 0.4);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  color: white;
+  transition: 0.5s all;
+  position: absolute;
+}
+.icon-box:hover{
+  transform: scale(1.2);
+}
+.wifi{
+  top:38%;
+}
+.calc{
+  bottom: 38%;
+}
+.bell{
+  left: 40%;
+}
+.music{
+  right: 40%;
+}
+.camera{
+  top: 40%;
+  right: 40%;
+}
+.clndar{
+  top: 40%;
+  left: 40%;
+}
+.file{
+  bottom: 40%;
+  left: 40%;
+}
+.phone{
+  bottom: 40%;
+  right: 40%;
+}
